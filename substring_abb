@@ -1,0 +1,23 @@
+//string containing abb as substring
+
+#include<stdio.h>
+ 
+void main()
+{
+    char str[50];
+    int i , c=0;
+    printf("harshit agarwal cs v b 118");
+    printf("\nEnter string\n");
+    
+    gets(str);
+    int len = strlen(str);
+    for(i = 0;i<len ; i++){
+        if(str[i] == 'a' && str[i+1] == 'b' && str[i+2]=='b')
+        c++;
+        
+    }
+    if( c > 0) printf("yes");
+    else printf("no");
+    
+    getch();
+}
