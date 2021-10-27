@@ -1,0 +1,23 @@
+//string starts with ab
+
+#include<stdio.h>
+ 
+void main()
+{
+    char str[50];
+    int i , c=0;
+    printf("harshit agarwal cs v b 118");
+    printf("\nEnter string\n");
+    
+    gets(str);
+    int len = strlen(str);
+    for(i = 0;i<=len ; i++){
+        if(str[0] == 'a' && str[1]== 'b') 
+        c++;
+        
+    }
+    if( c > 0) printf("yes");
+    else printf("no");
+    
+    getch();
+}
