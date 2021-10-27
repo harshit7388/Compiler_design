@@ -1,0 +1,23 @@
+// string containing all a's
+
+#include<stdio.h>
+ 
+void main()
+{
+    char str[50];
+    int i , c=0;
+    printf("harshit agarwal cs v b 118");
+    printf("\nEnter string\n");
+    
+    gets(str);
+    int len = strlen(str);
+    for(i = 0;i<len ; i++){
+        if(str[i] == 'a')
+        c++;
+        
+    }
+    if( c==len ) printf("yes");
+    else printf("no");
+    
+    getch();
+}
